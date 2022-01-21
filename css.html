@@ -4,51 +4,17 @@
     <!-- Compatibilidad con conjuntos de caracteres -->
     <meta charset="utf-8">
     <title>CSS</title>
-    <style>
-        header{
-            background-color: greenyellow;
-        }
-        nav{
-            background-color: purple;
-        }
-        /* anchor dentro de nav */
-        nav a{
-            color: white;
-            text-decoration: none;
-        }
-        main{
-            background-color: lightblue;
-        }
-        section{
-            background-color: orange;
-        }
-
-        article{
-            background-color: lightpink;
-        }
-
-        aside{
-            background-color: lightseagreen;
-        }
-
-        footer{
-            background-color: lightslategray;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!-- Información introductoria -->
     <header>
+        <img src="./foto-escritorio.jpeg">
         <h2>Bienvenidos a este sitio</h2>
     </header>
 
     <!-- Elementos relacionados a la navegación -->
-    <nav>
-        <a href="">Link</a>
-        <a href="">Link</a>
-        <a href="">Link</a>
-        <a href="">Link</a>
-    </nav>
+    
 
     <main>
         <!--Comentario-->
@@ -56,17 +22,33 @@
         <p>Diversión</p>
         <p>Otro parrafo</p>
         <hr>
-    </main>
+    </main><nav>
+        <!-- Unordered list -->
+        <ul>
+            <!-- list item -->
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+        </ul>
+        <!-- Ordered list -->
+        <!-- <ol>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+        </ol> -->
+    </nav>
     
     <!-- Contenido que se relaciona tematicamente -->
     <!-- Las secciones pueden tener su propio header o su propio footer -->
-    <section>
+    <section style="color: greenyellow;">
         <!-- Unidades de contenido -->
         <!-- Entradas de un blog -->
         <!-- Articulos, noticas -->
         <!-- reseñas o comentario -->
         <!-- Descripciones -->
-        <article>
+        <article style="color: dodgerblue;">
             <p>Article</p>
         </article>
         <article>

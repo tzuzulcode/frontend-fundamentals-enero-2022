@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    padding: 0;
+}
+
+img{
+    /* Width ancho */
+    width: 100%;
+}
+main{
+    display: inline-block;
+    width: 70%;
+}
+
+nav{
+    width: 30%;
+    display: inline-block;
+}
+
+/* anchor dentro de nav */
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    background-color: steelblue;
+}
