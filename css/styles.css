@@ -15,14 +15,40 @@ main{
 }
 
 nav{
-    width: 30%;
+    width: auto;
     display: inline-block;
+    /* background-color: chocolate; */
 }
 
 /* anchor dentro de nav */
 nav a{
     color: white;
     text-decoration: none;
+}
+
+/* Utilizando clases */
+.padding-100{
+    /*padding: 100px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    */
+    /* padding-right: 100px;
+    padding-left: 100px; */
+    padding:0px 100px;
+}
+
+.detalles{
+    
+}
+
+.detalles article{
+    border: 1px solid rgb(92, 92, 92);
+    margin: 30px 0px;
+}
+
+.beneficios{
+    /* background-color: darkmagenta; */
+    color: lightblue;
 }
 
 footer{
