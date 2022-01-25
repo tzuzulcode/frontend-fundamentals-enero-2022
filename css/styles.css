@@ -49,6 +49,8 @@ nav a{
 .beneficios{
     /* background-color: darkmagenta; */
     color: lightblue;
+    display: flex;
+    justify-content: space-around;
 }
 
 footer{
