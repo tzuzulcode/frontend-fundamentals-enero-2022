@@ -52,7 +52,11 @@ nav a{
     display: flex;
     justify-content: space-around;
 }
-
+aside{
+    padding: 50px 100px;
+}
 footer{
     background-color: steelblue;
+    padding: 50px 100px;
 }
+

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+
+@font-face {
+    font-family: 'Comforter';
+    src: url('../fonts/Comforter-Regular.ttf');
+}
+
+body{
+    background-color: rgb(29, 29, 29);
+    color: rgb(200, 200, 200);
+}
+
+.bold{
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.italic{
+    font-style: italic;
+}
+
+p{
+    /* Typeface */
+    font-family: 'Comforter',cursive;
+}
+
+.nutrition-information{
+    display: flex;
+}
+
+pre{
+    font-family: 'Roboto', sans-serif;
+}
