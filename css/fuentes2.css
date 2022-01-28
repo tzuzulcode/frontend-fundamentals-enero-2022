@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Murecho:wght@600;700&display=swap');
+body{
+    font-family: Verdana, sans-serif;
+    font-size: 20px;
+}
+
+header{
+    text-align: center; /*Centrar texto*/
+}
+
+h1{
+    font-family: 'Murecho', sans-serif;
+    font-size: 60px;
+    border: 10px dotted lightblue;
+}
+
+p.contactinfo{
+    font-size: 25px;
+}
+
+p.categorylabel {
+    font-size: 22px;
+    font-weight: bold;
+    /* text-transforn: uppercase convierte a mayúsculas */
+    text-transform: uppercase;
+}
+
+div.indented{
+    margin-left: 30px;
+}
+
+table{
+    border: 2px solid black;
+    /* Unir bordes */
+    border-collapse: collapse;
+    
+}
+thead th{
+    background-color: lightblue;
+}
+td,th{
+    padding: 10px 30px;
+}
+
