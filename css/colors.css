@@ -1,0 +1,16 @@
+#uglyparagraph{
+    color: #05668D;
+    border: 1px solid #05668D;
+    padding: 10px;
+}
+
+.orange{
+    color: #FB4D3D;
+}
+
+#uglydiv{
+    background-color: black;
+    border: 2px dashed red;
+    color: white;
+    padding: 20px;
+}

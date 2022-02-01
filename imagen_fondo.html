@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Imagen de fondo cubriendo la pantalla */
+        /* body{
+            background: url('./1-200x300.jpeg') no-repeat;
+            background-size: cover;
+            
+        } */
+        .imagen{
+            height: 200px;
+            width: auto;
+        }
+        .image-float{
+            height: 40px;
+            width: auto;
+            padding: 20px;
+            vertical-align: baseline;
+        }
+        .image-bottom{
+            height: 40px;
+            width: auto;
+            vertical-align: bottom;
+        }
+        .image-right{
+            float: right;
+            text-align: center;
+            font-size: 10px;
+            font-style: italic;
+        }
+
+        .fondo{
+            /* background-color: blue; */
+            width: 1000px;
+            height: 1000px;
+            /* background-image: url('./foto-escritorio.jpeg');
+            background-repeat: no-repeat;
+            background-position: center; */
+            background: blue url('./foto-escritorio.jpeg') no-repeat center;
+            padding: 30px;
+        }
+        li{
+            list-style-image: url('./1-200x300.jpeg');
+        }
+    </style>
+</head>
+<body>
+    <img class="imagen" src="./foto-escritorio.jpeg" alt="Foto escritorio">
+
+    <p><img class="image-float" src="./foto-escritorio.jpeg" alt="Foto escritorio"> ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, doloribus illum distinctio, repellat incidunt voluptates beatae eum non commodi rem similique quo unde, laborum voluptatum aliquam reiciendis amet. Maiores rerum animi harum mollitia repellat neque impedit culpa! Debitis ut provident repellendus, veritatis mollitia aliquid nesciunt et optio repellat architecto aut corporis necessitatibus sapiente dicta officia velit! Harum aspernatur voluptas adipisci maxime minus odio, sapiente ea numquam nisi a id non, nulla similique quibusdam tempora blanditiis. Repellendus enim vitae doloremque alias tempore porro, maiores fuga laudantium quae deserunt aspernatur illo dolor, ratione perferendis expedita optio. Inventore sint laudantium numquam alias quaerat?</p>
+    <div>      
+        <p><img class="image-float" src="./foto-escritorio.jpeg" alt="Foto escritorio"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, cupiditate!</p>
+    </div>
+    <div>      
+        <p><img class="image-bottom" src="./foto-escritorio.jpeg" alt="Foto escritorio"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, cupiditate!</p>
+    </div>
+
+    <div class="image-right">
+        <a href="https://tzuzulcode.com">
+            <img class="image-bottom" src="./foto-escritorio.jpeg" alt="Foto escritorio">
+        </a>
+        <p>Click a la imagen</p>
+    </div>
+
+    <div class="fondo"></div>
+    <ul>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+</body>
+</html>
