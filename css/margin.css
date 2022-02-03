@@ -8,31 +8,34 @@ div{
     color: white;
     font-weight: bold;
     text-align: center;
+    margin: 20px;
 }
 
 /* # significa obtener el id */
 #d1{
     background-color: #6fffe9;
-    margin: 0;
-    padding: 15px;
+    /* margin: 0; */
+    /* padding: 15px; */
     float: right;
+    margin: 10px;
+    pad: 10px;
 }
 #d2{
     background-color: #5BC0BE;
-    margin: 5px 0px 50px 15px;
-    border-width: 15px 5px 5px 15px;
-    padding: 25px 50px 6px 6px;
+    /* margin: 5px 0px 50px 15px;
+    padding: 25px 50px 6px 6px; */
+    /* border-width: 15px 5px 5px 15px; */
     float: left;
 }
 #d3{
     background-color: #3A506B;
-    margin: 0px 0px 0px 75px;
-    padding: 50px 6px;
+    /* margin: 0px 0px 0px 75px;
+    padding: 50px 6px; */
     float: left;
 }
 #d4{
     background-color: #1C2541;
-    margin: 25px 0px 0px 250px;
-    padding: 10px 100px 10px;
+    /* margin: 25px 0px 0px 10px;
+    padding: 10px 100px 10px; */
     float: right;
 }
