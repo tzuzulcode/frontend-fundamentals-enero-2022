@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .reproductor{
+            width: 400px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="./media/song.mp3">
+            <img src="https://media4.giphy.com/media/fWAC87fMPC04h5shaE/giphy.gif?cid=ecf05e47slynd96yu6u5kueijpstkdb8tylzky4hwzuljomw&rid=giphy.gif&ct=g" alt="Directo">
+        </a>
+    </div>
+
+    <video controls class="reproductor" src="./media/live_stream.mov">
+        <p>Tu navegador no soporta video HTML5</p>
+    </video>
+
+    <video class="reproductor" controls preload="auto" title="Live stream">
+        <source src="./media/live_stream.mov">
+        <!-- <source src="./media/live_stream.mov"> -->
+    </video>
+
+    <p>Mi canción</p>
+    <audio title="Mi canción" src="./media/song.mp3" controls loop preload="auto">
+    </audio>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Q04y2tvKCFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>
