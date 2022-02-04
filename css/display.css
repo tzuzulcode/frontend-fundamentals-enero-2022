@@ -1,0 +1,25 @@
+div{
+    display: inline;
+    background-color: aqua;
+    padding: 20px;
+    /* inline: no permite asignar ancho ni alto */
+    width: 500px;
+    height: 500px;
+}
+a{
+    display: inline-block;
+    /* inline-block: permite asignar ancho y alto */
+    height: 500px;
+    background-color: aquamarine;
+}
+
+span{
+    height: 500px;
+    background-color: blueviolet;
+}
+
+img{
+    height: 500px;
+    width: auto;
+    vertical-align: top;
+}
