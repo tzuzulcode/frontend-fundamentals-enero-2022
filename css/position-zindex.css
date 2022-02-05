@@ -19,19 +19,19 @@ div{
     background-color: cornflowerblue;
     top: 25px;
     left: 75px;
-    z-index: 3;
+    z-index: auto;
 }
 
 #d3{
     background-color: crimson;
     top: 50px;
     left: 150px;
-    z-index: 2;
+    z-index: auto;
 }
 
 #d4{
     background-color: deeppink;
     top: 75px;
     left: 225px;
-    z-index: 1;
+    z-index: -1;
 }
