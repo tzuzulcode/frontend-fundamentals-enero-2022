@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+body{
+    /* font-size: 12pt;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; 
+    font-style:italic;
+    */
+    font: italic 300 12pt 'Roboto', sans-serif;
+}
+
+
+nav{
+    width: 150px;
+    float: left;
+    margin-top: 12px;
+    margin-right: 20px;
+}
+
+nav ul{
+    list-style: none;
+    margin: 12px 0 0 0;
+    padding: 0;
+}
+
+nav li{
+    border-bottom: 1px solid white;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav li a:link{
+    font-size: 10pt;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0 10px 10px;
+    background-color: #E4E9B2;
+    color: white;
+}
+nav li a:visited{
+    font-size: 10pt;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0 10px 10px;
+    background-color: #B5CBB7;
+    color: white;
+}
+
+nav li a:hover{
+    font-size: 10pt;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0 10px 10px;
+    background-color: #E7E08B;
+    color: black;
+}
+nav li a:active{
+    font-size: 10pt;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0 10px 10px;
+    background-color: #E4E9B2;
+    color: white;
+}
+
+nav ul ul{
+    margin: 0;
+    margin-top: 1px;
+    padding-left: 10px;
+}
+
+nav ul ul li{
+    border-bottom: none;
+} 
+
+nav ul ul li a:link{
+    font-size: 10pt;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0 10px 10px;
+    background-color: #E4E9B2;
+    color: white;
+}
+nav ul ul li a:visited{
+    font-size: 10pt;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0 10px 10px;
+    background-color: #B5CBB7;
+    color: white;
+}
+nav ul ul li a:hover{
+    font-size: 10pt;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0 10px 10px;
+    background-color: #E7E08B;
+    color: black;
+}
+nav ul ul li a:active{
+    font-size: 10pt;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0 10px 10px;
+    background-color: #E4E9B2;
+    color: white;
+}
+
+main{
+    width: 600px;
+    float: left;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+}
