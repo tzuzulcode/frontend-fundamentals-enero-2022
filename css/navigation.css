@@ -55,6 +55,8 @@ nav li a:hover{
     background-color: #E7E08B;
     color: black;
 }
+
+/* Pseudo clases */
 nav li a:active{
     font-size: 10pt;
     font-weight: bold;
