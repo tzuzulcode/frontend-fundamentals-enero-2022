@@ -1,0 +1,15 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 2fr 5fr 1fr;
+}
+
+div{
+    background-color: darksalmon;
+    /* height: 100px;
+    width: 100px; */
+    /* margin: 20px; */
+    border: 1px black solid;
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+}
