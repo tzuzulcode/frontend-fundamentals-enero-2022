@@ -10,8 +10,10 @@ header{
 
 h1{
     font-family: 'Murecho', sans-serif;
-    font-size: 60px;
+    font-size: 200px;
     border: 10px dotted lightblue;
+    font-weight: bold;
+    -webkit-text-stroke: 10px lightblue;
 }
 
 p.contactinfo{

@@ -12,7 +12,7 @@ body{
 nav{
     display: flex;
     justify-content: center;
-    background-color: aqua;
+    background-color: #30343F;
 }
 
 nav ul{
@@ -20,7 +20,7 @@ nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aquamarine;
+    background-color: #30343F;
     padding: 0;
     margin: 0;
 }
@@ -46,11 +46,19 @@ nav li{
 
 nav li a{
     text-decoration: none;
-    color: blueviolet;
+    color: #FAFAFF;
+    padding: 5px;
 }
 nav li a:hover{
     text-decoration: none;
-    color: skyblue;
+    background-color: #E4D9FF;
+    color: #273469;
+    padding: 5px;
+}
+
+.logo:hover{
+    background-color: #30343F;
+    padding: 5px;
 }
 
 #contenedor{
@@ -63,4 +71,8 @@ nav li a:hover{
     position: absolute;
     left: calc(50% - 45px);
     border: black 1px solid;
+}
+
+main{
+    padding: 100px;
 }

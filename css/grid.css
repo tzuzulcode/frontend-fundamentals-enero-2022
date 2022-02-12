@@ -1,0 +1,16 @@
+/* Aaplicando grid al parent de los elementos */
+body{
+    display: grid;
+    /*                      c1 c2  c3  c4 */
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    /*                      c1 c2  c3 */
+    grid-template-columns: 33% 33% 33%;
+    /* grid-template-rows: ; */
+}
+
+div{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
