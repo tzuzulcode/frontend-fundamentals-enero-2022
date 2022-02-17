@@ -24,6 +24,7 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0px 100px;
+    margin-top: 50px;
 }
 
 #gallery{
@@ -36,6 +37,15 @@ main{
 
 #details{
     padding: 0px 50px;
+}
+
+#details h2{
+    font-size: 36px;
+}
+#details h3{
+    font-size: 24px;
+    text-decoration: line-through;
+    color: rgb(175, 175, 175);
 }
 #gallery-thumbnail{
     display: grid;
@@ -56,13 +66,56 @@ h1{
 
 .payment{
    display: grid;
-   grid-template-columns: 1fr 1fr; 
+   grid-template-columns: 1fr 1fr;
+   gap: 40px; 
 }
 
 .quantity{
     display: flex;
+    border: 1px #4F759B solid;
+    margin: 0;
+    padding: 0;
+}
+.quantity button{
+    width: 33.33%;
+    background-color: #C9D6E3;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    height: 45px;
+}
+
+.quantity button:hover{
+    background-color: #4F759B;
+    cursor: pointer;
+}
+.quantity div{
+    width: 33.33%;
+    text-align: center;
+    background-color: #C9D6E3;
+    border: 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: table-cell; */
+    border: solid #4F759B;
+    border-width: 0px 1px;
+}
+
+.quantity div p{
+    margin: 0;
 }
 
 .pay{
-    background-color: #A393E3;
+    background-color: #571F4E;
+    color: white;
+    padding: 0;
+    border: 0px;
+    margin: 0;
+    height: 45px;
+}
+.pay:hover{
+    background-color: #5D5179;
+    cursor: pointer;
 }
