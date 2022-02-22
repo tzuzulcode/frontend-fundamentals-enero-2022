@@ -1,0 +1,45 @@
+.box{
+    width: 500px;
+    height: 500px;
+
+    /* background-color: aqua; */
+    background: url(../images/luna.png) center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color:white;
+    padding: 50px;
+    background-clip: border-box;
+    border: 50px transparent black;
+    background-attachment: local;
+}
+.box1{
+    width: 500px;
+    height: 500px;
+
+    /* background-color: aqua; */
+    background: url(../images/luna.png) center;
+    font-size: 50px;
+    color:white;
+    background-attachment: scroll;
+}
+.box2{
+    width: 500px;
+    height: 500px;
+
+    /* background-color: aqua; */
+    background: url(../images/lobo.png) bottom left -15px / 50% no-repeat,
+        url(../images/luna.png) center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color:white;
+    padding: 50px;
+    background-clip: border-box;
+    border: 50px transparent black;
+    background-attachment: fixed;
+}
