@@ -7,6 +7,22 @@
     <title>Background colors</title>
 
     <style>
+        html{
+            box-sizing: border-box;
+            background-color: #1E2749;
+            height: 100%;
+        }
+        body{
+            /* background-image: linear-gradient(70deg,#c5f9d7 0%,#f7d486 50% 80%,#f27a7c); */
+            background-image: radial-gradient(farthest-corner at 50% 20%,#c5f9d7 50%,#f7d486,#f27a7c);
+            /* background-repeat: no-repeat; */
+            /* height: 100vh; */
+            margin: 0;
+            height: 100%;
+            box-sizing: border-box;
+            padding: 50px;
+
+        }
 
         table,tbody{
             border-spacing: 0;
@@ -23,9 +39,12 @@
             padding: 10px;
         }
 
-        tbody tr:nth-child(even){
+        tbody tr:nth-of-type(2n){
             background-color: #1E2749;
         }
+        /* tbody tr:nth-child(even){
+            background-color: #1E2749;
+        } */
         tbody tr:nth-child(odd){
             background-color: #273469;
         }
@@ -40,6 +59,18 @@
 
         /* nth-of-type() */
         /* nth-last-of-type() */
+
+        #mensaje{
+            margin-top: 30px;
+            width: 100px;
+            height: 100px;
+            background-color: #30343F;
+            /* background-image: radial-gradient(farthest-corner at 50% 20%,#c5f9d7 50%,#f7d486,#f27a7c); */
+            color: white;
+            border-radius: 30px 30px 0px 0px;
+            text-align: center;
+            border:white 10px solid;
+        }
     </style>
 </head>
 <body>
@@ -137,5 +168,9 @@
             </tr>
         </tbody>
     </table>
+
+    <div id="mensaje">
+        Hola
+    </div>
 </body>
 </html>
