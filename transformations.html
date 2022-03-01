@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            perspective: 800px;
+        }
+        div{
+            background: linear-gradient(blueviolet,blue);
+            width: 300px;
+            height: 300px;
+            /* transform: rotateX(50deg); */
+            /* transform: rotateY(50deg); */
+            /* transform: rotate3d(1,1,1,90deg); */
+            transform: rotate3d(1,1,1,0deg) translatez(700px);
+            perspective: 10px;
+
+        }
+    
+    </style>
+</head>
+<body>
+    <div>
+        <p>Rotacion X</p>
+    </div>
+</body>
+</html>

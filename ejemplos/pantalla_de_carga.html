@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #loading_element{
+            width: 200px;
+            height: 10px;
+            border: 1px solid black;
+        }
+        #progress{
+            background-color: aqua;
+            width: 10%;
+            height: 100%;
+        }
+        #progress:hover{
+            width: 100%;
+            transition: 3s;
+        }
+        
+        /* Como realizar una barra de carga solo con css */
+
+        #loading_element2{
+            margin-top: 100px;
+            width: 50px;
+            height: 50px;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #loading_element2:hover{
+            transition: 3s;
+            transform: rotate(360deg);
+        }
+        #loading_element3{
+            width: 25px;
+            height: 25px;
+            background-color: purple;
+        }
+        #loading_element3:hover{
+            transition: 3s;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="loading_element">
+        <div id="progress"></div>
+    </div>
+    <div id="loading_element2">
+        <div id="loading_element3">
+        </div>
+    </div>
+</body>
+</html>
