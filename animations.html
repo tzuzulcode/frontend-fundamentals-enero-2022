@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            display: inline-block;
+        }
+
+        #myAnimation{
+            width: 300px;
+            height: 300px;
+            /* transform: scale(0.5);
+            background-color: red; */
+            animation-name: myAnimation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            /* animation: myAnimation 5s infinite; */
+        }
+
+        #salto{
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            animation: salto 1s infinite;
+        }
+
+        h1{
+            font-size: 100px;
+            text-align: center;
+            color: aquamarine;
+            animation: text 2s infinite;
+            animation-direction:alternate-reverse;
+            animation-fill-mode: both;
+            animation-timing-function: linear;
+        }
+
+        /* @keyframes myAnimation {
+            from{
+                transform: scale(0.5);
+                background-color: red;
+            }
+            to{
+                transform: scale(1);
+                background-color: blue;
+            }
+        } */
+        @keyframes myAnimation {
+            0%{
+                transform: scale(0.5);
+                background-color: red;
+            }
+            50%{
+                transform: scale(1);
+                background-color: blue;
+            }
+            100%{
+                transform: scale(0.5);
+                background-color: red;
+            }
+        }
+
+        /* @keyframes myAnimation {
+            50%{
+                transform: scale(1);
+                background-color: blue;
+            }
+        } */
+
+        @keyframes salto{
+            50%{
+                transform: translateY(-150px);
+            }
+        }
+
+        @keyframes text {
+            0%{
+                transform: translateX(-100px);
+                color: blueviolet;
+            }
+            100%{
+                transform: translateX(100px);
+                color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="myAnimation"></div>
+    <div id="salto"></div>
+    <h1>Mi titulo</h1>
+</body>
+</html>
