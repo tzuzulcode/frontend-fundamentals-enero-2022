@@ -27,6 +27,11 @@
             height: 200px;
             background-color: blueviolet;
             animation: salto 1s infinite;
+            animation-play-state: paused;
+        }
+
+        #salto:hover{
+            animation-play-state: running;
         }
 
         h1{
@@ -34,9 +39,10 @@
             text-align: center;
             color: aquamarine;
             animation: text 2s infinite;
-            animation-direction:alternate-reverse;
+            animation-direction:alternate;
             animation-fill-mode: both;
-            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-timing-function:linear;
         }
 
         /* @keyframes myAnimation {
@@ -92,6 +98,19 @@
 <body>
     <div id="myAnimation"></div>
     <div id="salto"></div>
-    <h1>Mi titulo</h1>
+    <!-- <h1>Mi titulo</h1> -->
+
+    <!-- Se agregan scripts antes de cerrar el body -->
+    <script>
+        // Esto es codigo de JavaScript
+        // const indica que no puedo reemplazar el valor
+        // let indica una variable, puede reemplazar su valor
+        let persona = "David"
+        persona = "Roberto" //Las comillas indican que es un texto (String)
+
+        console.log(persona)
+    </script>
+
+    <script src="./js/miPrimerScript.js"></script>
 </body>
 </html>
