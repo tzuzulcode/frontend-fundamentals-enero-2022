@@ -105,10 +105,41 @@
         // Esto es codigo de JavaScript
         // const indica que no puedo reemplazar el valor
         // let indica una variable, puede reemplazar su valor
-        let persona = "David"
-        persona = "Roberto" //Las comillas indican que es un texto (String)
+        let personaNumero1 = "David"
+        let persona = "Roberto" //Las comillas indican que es un texto (String)
 
         console.log(persona)
+
+        let cantidadAlumnos = 42
+
+        console.log(cantidadAlumnos*5)
+        console.log(cantidadAlumnos)
+
+        cantidadAlumnos = cantidadAlumnos*5
+
+        console.log(cantidadAlumnos)
+
+        let edad = 15
+        let minimoEdad = 16
+
+        //Condiciones
+        // Si se cumple la condicion, decimos que es verdadero o true
+        // Por le contrario, decimos que es e falso o false
+        if(edad < minimoEdad){
+            console.log("No puedes ver la pelicula")
+            console.log("Tienes",edad)
+        }else{
+            console.log("Puedes ver la pelicula")
+            console.log("Tienes",edad)
+        }
+
+        let clima = "frio"
+
+        //Comparación de igualdad: ==
+        if(clima=="soleado"){
+            console.log("Ponte bloqueador solar")
+        }
+
     </script>
 
     <script src="./js/miPrimerScript.js"></script>
