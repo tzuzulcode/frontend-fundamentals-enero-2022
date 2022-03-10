@@ -12,14 +12,19 @@
         h1{
             color: aqua;
         }
+        #bienvenida{
+            background-color: blue;
+        }
     </style>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
     <header class="header">
-        <h1>Hola</h1>
+        <h1 id="bienvenida">Hola</h1>
         <p>Mundo</p>
         <p>Adios</p>
+        <div id="despedida">Adios</div>
+        <button id="buttonSaludo">Saludar</button>
     </header>
     <footer>
         <ul>
@@ -27,7 +32,29 @@
         </ul>
     </footer>
     <script>
+        const h1Bienvenida = document.getElementById("bienvenida")// Obtener un elemento por su id
+        const pDespedida = document.getElementById("despedida")// Obtener un elemento por su id
+        const buttonSaludo = document.getElementById("buttonSaludo")// Obtener un elemento por su id
+        
+        console.dir(h1Bienvenida)
+        console.dir(buttonSaludo)
+        h1Bienvenida.innerText = "Bienvenida" // innerText cambia el texto interno del elemento
 
+        pDespedida.innerHTML = "<h1>Adios</h1>" //innerHTML cambia el html interno del elemento
+
+        // Función
+        // 1. Crear o definir la función
+        // * Podemos recibir parámetros: elemento
+        function changeElement(elemento){
+            console.log("Cambiando...")
+            console.log(elemento)
+        }
+
+        //2. Utilizar la función o ejecutar la función
+        changeElement("h1")
+        changeElement("p")
+        changeElement("img")
+        changeElement("div")
     </script>
 </body>
 </html>
