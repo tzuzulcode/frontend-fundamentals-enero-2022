@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mensaje{
+            background-color: lavender;
+            font-size: 100px;
+            transform: translateX(100px);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="bienvenida">Bienvenido</h1>
+    <button id="accion">Presionar</button>
+    <script>
+        const h1 = document.getElementById("bienvenida")
+        const button = document.getElementById("accion")
+
+        button.onclick = function (){
+            if(h1.className == "mensaje"){
+                h1.className = ""
+                h1.innerText = "Bienvenido"
+            }else{
+                h1.className = "mensaje"
+                h1.innerText = "Bienvenido Tzuzul"
+            }
+        }
+
+    </script>
+</body>
+</html>

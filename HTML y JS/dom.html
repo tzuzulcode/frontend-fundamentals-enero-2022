@@ -7,13 +7,16 @@
     <title>Document</title>
     <style>
         .header{
-            background-color: red;
+            background-color: lightgray;
         }
         h1{
-            color: aqua;
+            color: violet;
         }
         #bienvenida{
-            background-color: blue;
+            background-color: lightblue;
+        }
+        .texto-verde{
+            color: aquamarine;
         }
     </style>
     <!-- <link rel="stylesheet" href="style.css"> -->
@@ -35,7 +38,10 @@
         const h1Bienvenida = document.getElementById("bienvenida")// Obtener un elemento por su id
         const pDespedida = document.getElementById("despedida")// Obtener un elemento por su id
         const buttonSaludo = document.getElementById("buttonSaludo")// Obtener un elemento por su id
-        
+        //h1Bienvenida.className = "texto-verde"
+
+        //h1Bienvenida = "Texto"
+
         console.dir(h1Bienvenida)
         console.dir(buttonSaludo)
         h1Bienvenida.innerText = "Bienvenida" // innerText cambia el texto interno del elemento
@@ -48,6 +54,7 @@
         function changeElement(elemento){
             console.log("Cambiando...")
             console.log(elemento)
+            elemento.className = "texto-verde"
         }
 
         //2. Utilizar la función o ejecutar la función
@@ -55,6 +62,7 @@
         changeElement("p")
         changeElement("img")
         changeElement("div")
+        changeElement(h1Bienvenida)
     </script>
 </body>
 </html>
