@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <style>
+        canvas{
+            border: solid thin black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="350" height="450"></canvas>
+
+    <noscript>
+        <h1>Tu navegador no soporta JS 😭</h1>
+    </noscript>
+    <script>
+        const canvas = document.getElementById("myCanvas")
+        const context = canvas.getContext("2d")
+
+        context.fillStyle = "#B3CBB9"
+        context.fillRect(30,30,150,150)
+
+        context.strokeStyle = "#542e71"
+        context.strokeRect(35,35,150,150)
+
+        let startPoint = (Math.PI/180)*0
+        let endPoint = (Math.PI/180)*360
+        context.beginPath()
+        context.arc(200,200,100,startPoint,endPoint,false)
+        context.fillStyle = "#84A9C0"
+        context.fill()
+
+
+        //Dibujando un poligono
+        context.beginPath()
+        context.moveTo(0,0)
+        context.lineTo(60,60)
+        context.lineTo(120,0)
+        context.lineTo(180,60)
+        context.lineTo(240,0)
+        context.lineWidth = 15
+        context.stroke()
+        context.closePath()
+        
+
+    </script>
+</body>
+</html>
