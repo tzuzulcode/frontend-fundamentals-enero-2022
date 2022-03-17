@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width="900" height="900" id="myCanvas"></canvas>
+    <button id="start">Start</button>
+    <script>
+        const canvas = document.getElementById("myCanvas")
+        const context = canvas.getContext("2d")
+        const start = document.getElementById("start")
+
+        const img = new Image()
+        img.src= "./images/character.png"
+
+        img.onload = function(){
+            context.drawImage(img,300,300)
+            context.drawImage(img,250, 150, 100, 100, 100,100, 200, 200)
+        }
+
+        let posx = 100
+        let posy = 100
+
+        function animation(){
+            context.clearRect(0,0,900,900)
+            posx= posx + 100
+            posy= posy + 100
+            context.drawImage(img,posx,posy)
+        }
+
+        start.onclick = animation
+
+    </script>
+</body>
+</html>

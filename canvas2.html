@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myCanvas{
+            width: 900px;
+            height: 900px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas width="900" height="900" id="myCanvas"></canvas>
+    <script>
+        const canvas = document.getElementById("myCanvas")
+        const context = canvas.getContext("2d")
+        
+        let sides = 5
+        let posx = 500
+        let posy = 500
+        let angle = 2*Math.PI/sides
+        let sideSize = 300
+        
+        context.beginPath()
+        // context.lineTo(155.06115173204148,161.21822065013419)
+
+        // for(let i=0;i<10;i++){ // Repite 10 veces
+        //     context.beginPath()
+        //     context.moveTo(posx,posy)
+        //     context.lineTo(posx+500,posy)
+        //     context.lineWidth = 1
+        //     context.stroke()
+        //     context.closePath()
+        //     posy = posy + 10
+        // }
+        let newPosX = sideSize*Math.cos(angle*0) + posx
+        let newPosY = sideSize*Math.sin(angle*0) + posy
+        context.moveTo(newPosX,newPosY)
+
+        for(let i=1;i<=sides;i++){ // Repite "sides" veces
+            let newPosX = sideSize*Math.cos(angle*i) + posx
+            let newPosY = sideSize*Math.sin(angle*i) + posy
+            console.log(newPosX,newPosY)
+            context.lineTo(newPosX,newPosY)
+        }
+        context.lineWidth = 1
+        context.stroke()
+        context.fillStyle = "#84A9C0"
+        context.fill()
+        context.closePath()
+    </script>
+</body>
+</html>
