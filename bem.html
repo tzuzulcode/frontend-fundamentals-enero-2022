@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+        /* Normalization */
+        body{
+            margin: 0;
+        }
+
         .btn{
             padding: 5px;
             border-radius: 5px;
@@ -45,6 +51,63 @@
 
         }
 
+        .hero{
+            background-image: url(./images/background.jpg);
+            background-size: cover;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 70vh;
+            position: relative;
+            margin: 0 7%;
+            margin-top: 70px;
+            border-radius: 30px;
+        }
+        .hero__container{
+            padding-left: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+            position: relative;
+        }
+        .hero__slogan{
+            font-size: 3rem;
+        }
+        .hero__description{
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+        .hero__cta{
+            text-decoration: none;
+            padding: 12px 48px;
+            margin-top: 30px;
+            background-color: rgb(90, 0, 128);
+            max-width: max-content;
+            color: white;
+            font-size: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .hero__cta:hover{
+            background-color: rgb(126, 61, 153);
+        }
+
+        .hero__phone{
+            /* max-height: 100%; */
+            position: absolute;
+            height: 80%;
+            top: 10%;
+            left: 60%;
+        }
+        .hero__overlay{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 40%;
+            border-radius: 30px;
+        }
+
     </style>
 </head>
 <body>
@@ -59,19 +122,23 @@
             <a class="navbar__sign-in" href="">Link</a>
         </ul>
     </nav>
-    <header>
-        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloremque ea modi ex ipsum enim nesciunt, ipsa deserunt sed harum eaque, quidem laudantium. Asperiores, tenetur eaque. Ipsum amet assumenda unde!</p>
+    <header class="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__container">
+            <h1 class="hero__slogan">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+            <p class="hero__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloremque ea modi ex ipsum enim nesciunt, ipsa deserunt sed harum eaque, quidem laudantium. Asperiores, tenetur eaque. Ipsum amet assumenda unde!</p>
+            <a class="hero__cta" href="">Learn More</a>
+        </div>
+        <img class="hero__phone" src="./images/phone.png" alt="Telefono">
 
-        <a href="">Learn More</a>
     </header>
     <main>
 
     </main>
 
-    <button class="btn">Dar click</button>
+    <!-- <button class="btn">Dar click</button>
     <button class="btn btn--red">Dar otro click</button>
-    <button class="btn btn--blue">Dar otro click</button>
+    <button class="btn btn--blue">Dar otro click</button> -->
 
     <footer>
 
